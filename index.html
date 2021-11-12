@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>CodePen - Checkmark Spinner ✅</title>
+
+  <link rel="stylesheet" media="screen" href="https://cpwebassets.codepen.io/assets/fullpage/fullpage-1580f96ce81ff0a427cf57dda2748ce646c38efc201ae5942a29958cffa6856d.css" />
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+
+
+  <title>CodePen - Checkmark Spinner ✅</title>
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+  <style>
+    html { font-size: 15px; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body { height:100%; display: flex; flex-direction: column; }
+    .referer-warning {
+      background: black;
+      box-shadow: 0 2px 5px rgba(0,0,0, 0.5);
+      padding: 0.75em;
+      color: white;
+      text-align: center;
+      font-family: var(--cp-font-family);
+      line-height: 1.2;
+      font-size: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    .referer-warning h1 { font-size: 1.2rem; margin: 0; }
+    .referer-warning a { color: #56bcf9; } /* $linkColorOnBlack */
+  </style>
+</head>
+
+
+  <div id="result-iframe-wrap" role="main">
+
+    <iframe
+      id="result"
+      srcdoc="
+<!DOCTYPE html>
+<html lang=&quot;en&quot; >
+
+<head>
+
+  <meta charset=&quot;UTF-8&quot;>
+  
+<link rel=&quot;apple-touch-icon&quot; type=&quot;image/png&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png&quot; />
+<meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;CodePen&quot;>
+
+<link rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot; />
+
+<link rel=&quot;mask-icon&quot; type=&quot;image/x-icon&quot; href=&quot;https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot; color=&quot;#111&quot; />
+
+
+  <title>CodePen - Checkmark Spinner ✅</title>
+  <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, viewport-fit=cover&quot;>
+  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Hind&amp;amp;display=swap'>
+  
+<style>
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue),90%,20%);
+	--fg: hsl(var(--hue),10%,90%);
+	--primary: hsl(var(--hue),90%,55%);
+	--primary-dn: hsl(var(--hue),90%,45%);
+	font-size: calc(16px + (24 - 16) * (100vw - 320px) / (1280 - 320));
+}
+
+body, button {
+	font: 1em/1.5 Hind, sans-serif;
+}
+body {
+	background: var(--bg);
+	color: var(--fg);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.check-spinner__worm-a,
+.check-spinner__worm-b {
+	visibility: hidden;
+}
+.check-spinner {
+	margin-bottom: 3em;
+	overflow: visible;
+	width: 6.25em;
+	height: 6.25em;
+}
+.check-spinner__worm-a {
+	animation: worm-a 1.2s linear;
+}
+.check-spinner__worm-b {
+	animation: worm-b 1.2s 1.2s linear forwards;
+	stroke-dashoffset: 0.01;
+}
+.check-spinner__circle {
+	animation: circle 0.2s 2.3s cubic-bezier(0,0,.42,1.33) forwards;
+}
+
+/* Animations */
+@keyframes worm-a {
+	from {
+		stroke-dashoffset: 36.1;
+		visibility: visible;
+	}
+	to {
+		stroke-dashoffset: -252.9;
+		visibility: visible;
+	}
+}
+@keyframes worm-b {
+	from {
+		animation-timing-function: linear;
+		stroke-dasharray: 0 0 72.2 341.3;
+		visibility: visible;
+	}
+	69.7% {
+		animation-timing-function: ease-out;
+		stroke-dasharray: 0 207 45 341.3;
+		visibility: visible;
+	}
+	to {
+		animation-timing-function: ease-out;
+		stroke-dasharray: 0 297 45 341.3;
+		visibility: visible;
+	}
+}
+@keyframes circle {
+	from { r: 0; }
+	to { r: 50px; }
+}
+@keyframes reappear {
+	from { visibility: hidden; }
+	to { visibility: visible; }
+    
+}
+
+.fadeinout {
+ linear 1 forwards;
+    animation: fadeinout 0.2s linear  forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fadeinout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage(&quot;resize&quot;, &quot;*&quot;);
+  }
+</script>
+
+
+</head>
+
+<body translate=&quot;no&quot; >
+<div class=&quot;fadeinout&quot;>
+<svg class=&quot;check-spinner&quot; viewBox=&quot;0 0 100 100&quot; width=&quot;100px&quot; height=&quot;100px&quot;>
+	<defs>
+		<linearGradient id=&quot;cs-grad-1&quot; x1=&quot;0.5&quot; y1=&quot;0&quot; x2=&quot;0.5&quot; y2=&quot;1&quot;>
+			<stop offset=&quot;0%&quot; stop-color=&quot;hsl(0,0%,100%)&quot; />
+			<stop offset=&quot;100%&quot; stop-color=&quot;hsl(0,0%,80%)&quot; />
+		</linearGradient>
+		<linearGradient id=&quot;cs-grad-2a&quot; x1=&quot;0.5&quot; y1=&quot;0&quot; x2=&quot;0.5&quot; y2=&quot;1&quot; gradientTransform=&quot;rotate(90,0.5,0.5)&quot;>
+			<stop offset=&quot;0%&quot; stop-color=&quot;hsl(123,90%,55%)&quot; />
+			<stop offset=&quot;100%&quot; stop-color=&quot;hsl(183,90%,25%)&quot; />
+		</linearGradient>
+		<linearGradient id=&quot;cs-grad-2b&quot; x1=&quot;0.5&quot; y1=&quot;0&quot; x2=&quot;0.5&quot; y2=&quot;1&quot;>
+			<stop offset=&quot;0%&quot; stop-color=&quot;hsl(123,90%,55%)&quot; />
+			<stop offset=&quot;100%&quot; stop-color=&quot;hsl(183,90%,25%)&quot; />
+		</linearGradient>
+	</defs>
+	<circle class=&quot;check-spinner__circle&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;0&quot; fill=&quot;url(#cs-grad-1)&quot; />
+	<circle class=&quot;check-spinner__worm-a&quot; cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;46&quot; fill=&quot;none&quot; stroke=&quot;url(#cs-grad-2a)&quot; stroke-width=&quot;8&quot; stroke-linecap=&quot;round&quot; stroke-dasharray=&quot;72.2 216.8&quot; stroke-dashoffset=&quot;36.1&quot; transform=&quot;rotate(-90,50,50)&quot; />
+	<path class=&quot;check-spinner__worm-b&quot; d=&quot;M 17.473 17.473 C 25.797 9.15 37.297 4 50 4 C 75.4 4 96 24.6 96 50 C 96 75.4 75.4 96 50 96 C 24.6 96 4 75.4 4 50 C 4 44.253 6.909 36.33 12.5 35 C 21.269 32.913 35 50 35 50 L 45 60 L 65 40&quot; fill=&quot;none&quot; stroke=&quot;url(#cs-grad-2b)&quot; stroke-width=&quot;8&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-dasharray=&quot;0 0 72.2 341.3&quot; />
+</svg>
+</div>
+    <script src=&quot;https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js&quot;></script>
+
+  <script src='https://fonts.googleapis.com/css2?family=Hind&amp;amp;display=swap'></script>
+      <script id=&quot;rendered-js&quot; >
+// for restarting the animation
+window.addEventListener(&quot;DOMContentLoaded&quot;, () => {
+  const replay = document.getElementById(&quot;replay&quot;);
+  let resetTimeout = null;
+  let btnTimeout = null;
+  // prevent keyboard interaction while the button is hidden
+  const tempHideBtn = btn => {
+    if (btn) {
+      const btnCS = window.getComputedStyle(btn);
+      let btnAnimDur = btnCS.getPropertyValue(&quot;animation-duration&quot;);
+
+      btnAnimDur = +btnAnimDur.split(&quot;s&quot;)[0] * 1e3;
+      btn.disabled = true;
+
+      clearTimeout(btnTimeout);
+      btnTimeout = setTimeout(() => {
+        btn.disabled = false;
+      }, btnAnimDur);
+    }
+  };
+
+  if (replay) {
+    let spinnerEls = [
+    &quot;circle&quot;,
+    &quot;worm-a&quot;,
+    &quot;worm-b&quot;];
+
+    spinnerEls = spinnerEls.map(e => document.querySelector(`.check-spinner__${e}`));
+    // hide the button at start
+    tempHideBtn(replay);
+
+    replay.addEventListener(&quot;click&quot;, function () {
+      // kill the animations
+      spinnerEls.forEach(e => {
+        e.style.animation = &quot;none&quot;;
+      });
+      this.style.animation = &quot;none&quot;;
+
+      // restore them, hide the button again
+      clearTimeout(resetTimeout);
+      resetTimeout = setTimeout(() => {
+        spinnerEls.forEach(e => {
+          e.removeAttribute(&quot;style&quot;);
+        });
+        this.removeAttribute(&quot;style&quot;);
+        tempHideBtn(this);
+      }, 0);
+    });
+  }
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
+"
+      sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation  allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; microphone; midi; clipboard-read; clipboard-write" allowTransparency="true"
+      allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
+      </iframe>
+
+  </div>
+</body>
+</html>
